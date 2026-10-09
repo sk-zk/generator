@@ -1,5 +1,8 @@
+aiohttp
 colorama
-protobuf~=4
+protobuf>=4
+pycryptodome
 pyproj
 requests
+scipy
 shapely

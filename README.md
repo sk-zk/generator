@@ -9,7 +9,7 @@ cd generator
 pip install -r requirements.txt
 ```
 
-### Sample output
+## Sample output
 ```sh
 $ ./generator.py 2026-10-08 germany.geojson
 12 (0.006%)
@@ -29,7 +29,7 @@ The script reports the number of iterations (chunks of 50 tiles) and covered are
 When a modified tile is found, it prints the lat/lon coordinates at the tile's center, the x/y coordinates
 of the tile (z is always 17), and the modification date in local time.
 
-### Options
+## Options
 Use `--envelope` to pass a bounding box instead of a GeoJSON file.
 
 By default, polygons are simplified to improve performance. Pass `--no-simplify` to disable this.

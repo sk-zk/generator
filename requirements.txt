@@ -1,0 +1,5 @@
+colorama
+protobuf~=4
+pyproj
+requests
+shapely

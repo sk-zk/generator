@@ -106,7 +106,7 @@ async def main():
     if args.envelope:
         polygon = shapely.box(args.envelope[1], args.envelope[0], args.envelope[3], args.envelope[2])
     elif args.geojson_path:
-        with open(args.geojson_path, "r") as f:
+        with open(args.geojson_path, "r", encoding="utf-8") as f:
             content = f.read()
             polygon = shapely.from_geojson(content)
             if not args.no_simplify:
